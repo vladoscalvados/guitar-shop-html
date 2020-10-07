@@ -1,0 +1,12 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body,
+html {
+	font-family: var(--main-font-family);
+	color: var(--main-dark-light-color);
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}

@@ -1,0 +1,35 @@
+// Details container
+.details-container {
+  height: 20em;
+  background: var(--main-white2-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content {
+    text-align: center;
+
+    h1 {
+      font-size: var(--main-lg3-font);
+    }
+    .counts {
+      position: relative;
+      top: 20px;
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 120px;
+
+      .count {
+        text-align: center;
+
+        h4 {
+          font-size: var(--main-lg2-font);
+        }
+
+        p {
+          font-size: var(--main-md-font);
+        }
+      }
+    }
+  }
+}

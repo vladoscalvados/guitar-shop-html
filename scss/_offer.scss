@@ -1,0 +1,87 @@
+// Offer Container - > Second Section
+.offer-container {
+	height: 40em;
+	background: var(--main-white-color);
+
+	//   Layout
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-rows: 300px auto;
+
+	.header {
+		text-align: center;
+		@include flexCenter();
+		justify-content: center;
+		flex-direction: column;
+
+		h1 {
+			font-size: var(--main-lg2-font);
+		}
+
+		p {
+			font-size: var(--main-md-font);
+		}
+	}
+
+	.body {
+		position: relative;
+		top: -54px;
+		.content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.img-container {
+				img {
+					width: 450px;
+				}
+			}
+
+			.txt-container {
+				h2 {
+					font-size: var(--main-lg2-font);
+					font-weight: normal;
+				}
+				h5 {
+					font-size: var(--main-lg3-font);
+					font-weight: lighter;
+				}
+
+				.price {
+					display: flex;
+					align-items: center;
+
+					.close {
+						text-decoration: line-through;
+					}
+
+					.open {
+						font-weight: bold;
+						font-size: var(--main-md-font);
+					}
+				}
+
+				//   Horizontal
+				.horizontal {
+					position: relative;
+					top: 10px;
+					opacity: 0.2;
+					height: 0.5px;
+				}
+
+				.buttons {
+					position: relative;
+					top: 20px;
+					display: flex;
+
+					p {
+						cursor: pointer;
+						&:hover {
+							color: var(--main-primary-color);
+						}
+					}
+				}
+			}
+		}
+	}
+}

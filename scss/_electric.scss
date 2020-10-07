@@ -1,0 +1,644 @@
+// Electric
+.features-electric-products {
+  height: 50em;
+  background: var(--main-white-color);
+
+  //   Layout
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 300px auto;
+
+  .header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: var(--main-lg2-font);
+    }
+
+    p {
+      font-size: var(--main-md-font);
+    }
+
+    // Buttons
+    .tab-btn {
+      position: relative;
+      top: 30px;
+      display: flex;
+
+      button {
+        padding: 14px 20px;
+        width: 120px;
+        margin: 5px;
+        border-radius: 8px;
+        border: none;
+        background: none;
+        color: var(--main-dark-color);
+        font-size: var(--main-md-font) / 2;
+        cursor: pointer;
+      }
+
+      button.active {
+        background: var(--main-primary-color);
+        color: var(--main-white-color);
+
+        &:hover {
+          cursor: pointer;
+          transition: var(--main-transition);
+        }
+      }
+    }
+  }
+
+  // Body
+  .body {
+    position: relative;
+    top: -50px;
+    display: grid;
+    place-items: center;
+    grid-gap: 20px;
+
+    .electric {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-gap: 10px;
+    }
+
+    // J and D
+    .j-and-d {
+      display: flex;
+
+      // Product 1
+      .product:nth-child(1) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          img {
+            margin-bottom: 22px;
+
+            &:hover {
+              transform: scale(1.1);
+              transition: var(--main-transition);
+            }
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      // Product 2
+      .product:nth-child(2) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          img {
+            margin-bottom: 22px;
+
+            &:hover {
+              transform: scale(1.1);
+              transition: var(--main-transition);
+            }
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    //Brian may
+    .brian-may {
+      display: flex;
+
+      // Product 1
+      .product:nth-child(1) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+          img {
+            margin-bottom: 22px;
+          }
+          img:hover {
+            transform: scale(1.1);
+            transition: var(--main-transition);
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // Product 2
+      .product:nth-child(2) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+          img {
+            margin-bottom: 22px;
+          }
+          img:hover {
+            transform: scale(1.1);
+            transition: var(--main-transition);
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // Fender
+    .fender {
+      display: flex;
+
+      // Product 1
+      .product:nth-child(1) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+          img {
+            margin-bottom: 22px;
+          }
+          img:hover {
+            transform: scale(1.1);
+            transition: var(--main-transition);
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // Product 2
+      .product:nth-child(2) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+          img {
+            margin-bottom: 22px;
+          }
+          img:hover {
+            transform: scale(1.1);
+            transition: var(--main-transition);
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // Ibanez
+    .ibanez {
+      display: flex;
+
+      // Product 1
+      .product:nth-child(1) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+          img {
+            margin-bottom: 22px;
+          }
+          img:hover {
+            transform: scale(1.1);
+            transition: var(--main-transition);
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // Product 2
+      .product:nth-child(2) {
+        width: 340px;
+        padding: 10px;
+        border: 2px var(--main-gray-color) solid;
+        display: flex;
+        flex-direction: column;
+
+        // Img and name
+        .info:nth-child(1) {
+          padding: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+
+          a {
+            font-size: var(--main-md-font);
+            font-weight: lighter;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+          img {
+            margin-bottom: 22px;
+          }
+          img:hover {
+            transform: scale(1.1);
+            transition: var(--main-transition);
+          }
+        }
+
+        // Price and rate
+        .info:nth-child(2) {
+          display: flex;
+          text-align: center;
+          justify-content: space-between;
+          margin: 0 10px 0 10px;
+          margin-bottom: 10px;
+
+          b {
+            font-size: var(--main-md-font);
+          }
+          img {
+            width: 100px;
+            height: 20px;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+          height: 0.5px;
+        }
+
+        // Buttons
+        .info:nth-child(4) {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            padding: 10px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .brian-may,
+    .fender,
+    .ibanez {
+      display: none;
+    }
+  }
+}

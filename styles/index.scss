@@ -1,0 +1,1047 @@
+@mixin rotate-toggle-btn {
+	transform: rotate(360deg) scale(1.4);
+	transition: var(--main-transition);
+	color: var(--main-primary-color);
+}
+// SCSS files
+// Root
+@import "../scss/root";
+
+// Styles
+@import "../scss/flexCenter";
+@import "../scss/anchorTag";
+
+// Element
+@import "../scss/cart";
+@import "../scss/chevron";
+
+// Sections
+@import "../scss/main";
+@import "../scss/email";
+@import "../scss/acoustic";
+@import "../scss/electric";
+@import "../scss/footer";
+@import "../scss/offer";
+@import "../scss/testimonials";
+@import "../scss/blogs";
+@import "../scss/contact";
+@import "../scss/about";
+@import "../scss/details";
+
+// Default
+@import "../scss/default";
+
+// Responsiveness
+@media screen and (max-width: 1366px) and (min-width: 971px) {
+	// Main
+	.main {
+		// Navbar
+		.default {
+			z-index: 3;
+			background: var(--main-white2-color);
+			box-shadow: none;
+			@include flexCenter();
+			justify-content: space-around;
+			.logo-container {
+				position: relative;
+				right: 40px;
+			}
+
+			.toggle-btn {
+				position: relative;
+				right: -120px;
+				display: block;
+
+				i {
+					font-size: 1.7rem;
+
+					&:hover {
+						cursor: pointer;
+					}
+
+					&:active {
+						@include rotate-toggle-btn();
+					}
+				}
+			}
+
+			.search-container,
+			.menu-container {
+				display: none;
+			}
+		}
+
+		// Mobile view
+		.responsive {
+			position: fixed;
+			top: -340px;
+
+			width: 100vw;
+			flex-direction: column;
+			@include nav-bar-style();
+			height: 50vh;
+			.logo-container {
+				position: relative;
+				display: none;
+			}
+
+			.search-container {
+				text-align: center;
+				input {
+					border-top-left-radius: 8px;
+					border-bottom-left-radius: 8px;
+					display: block;
+				}
+			}
+
+			.menu-container {
+				flex-direction: column;
+				text-align: center;
+
+				li {
+					padding: 20px;
+				}
+			}
+		}
+
+		// Hero
+		.hero {
+			transform: scale(0.9);
+
+			.txt-container {
+				.shop-now-btn {
+					padding: 15px;
+				}
+			}
+		}
+	}
+
+	// Offer Container
+	.offer-container {
+		.header,
+		.body {
+			transform: scale(0.9);
+		}
+	}
+
+	// Blogs
+	.blogs-container {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-self: center;
+
+		.header {
+			position: relative;
+			top: 120px;
+			h1 {
+				font-size: var(--main-lg2-font);
+			}
+		}
+
+		.body {
+			position: relative;
+			top: 200px;
+			transform: scale(0.9);
+
+			.concert {
+				.img-container {
+					img {
+						transform: scale(0.9);
+					}
+				}
+			}
+		}
+	}
+
+	// About container
+	.about-container {
+		height: 35em;
+
+		.body {
+			padding: 10px;
+			align-items: center;
+
+			.txt-container {
+				left: unset;
+				h1 {
+					font-size: var(--main-lg2-font);
+				}
+				p {
+					font-size: var(--font-md-size);
+					line-height: 25px;
+				}
+			}
+
+			.img-container {
+				img {
+					width: 300px;
+				}
+			}
+		}
+	}
+
+	// Contact Container
+	.contact-container {
+		height: 34em;
+		.form-container {
+			margin: 0 80px 0 80px;
+
+			h1 {
+				font-size: var(--main-lg2-font);
+				font-size: 2.7rem;
+			}
+			.form {
+				position: relative;
+				top: 30px;
+			}
+		}
+	}
+
+	// Footer
+	.footer {
+		height: 20em;
+		.content {
+			transform: scale(.9);
+			left: 15px;
+			display: grid;
+			grid-template-columns: repeat(4, auto);
+			place-items: center;
+
+			.social-media {
+				position: relative;
+				top: -22px;
+			}
+
+			.help {
+				position: relative;
+				top: 10px;
+			}
+			.subscribe {
+				position: relative;
+				top: 25px;
+			}
+		}
+	}
+}
+
+// Medium
+@media screen and (max-width: 970px) and (min-width: 559px) {
+	// Main
+	.main {
+		.default {
+			z-index: 3;
+			background: var(--main-white2-color);
+			box-shadow: none;
+
+			.logo-container {
+				position: relative;
+				right: 40px;
+			}
+
+			.toggle-btn {
+				position: relative;
+				right: -120px;
+				display: block;
+
+				i {
+					font-size: 1.7rem;
+
+					&:hover {
+						cursor: pointer;
+					}
+					&:active {
+						@include rotate-toggle-btn();
+					}
+				}
+			}
+
+			.search-container,
+			.menu-container {
+				display: none;
+			}
+		}
+		.responsive {
+			position: fixed;
+			top: -340px;
+			width: 100vw;
+
+			@include nav-bar-style();
+			height: 50vh;
+
+			flex-direction: column;
+
+			.logo-container {
+				position: relative;
+				display: none;
+			}
+
+			.search-container {
+				text-align: center;
+
+				input {
+					border-top-left-radius: 8px;
+					border-bottom-left-radius: 8px;
+					display: block;
+				}
+			}
+
+			.menu-container {
+				flex-direction: column;
+				text-align: center;
+
+				li {
+					padding: 20px;
+				}
+			}
+		}
+
+		// Hero
+		.hero {
+			flex-direction: column;
+			.txt-container {
+				position: relative;
+				top: 140px;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+
+				h1 {
+					font-size: var(--main-lg-font);
+				}
+			}
+
+			.img-container {
+				position: absolute;
+				transform: rotate(20deg) scale(0.8);
+				top: 40px;
+				right: 20px;
+				opacity: 0.3;
+			}
+		}
+	}
+
+	// Offer Container
+	.offer-container {
+		height: 60em;
+		.header {
+			text-align: center;
+		}
+
+		.body {
+			position: relative;
+			top: 40px;
+			.content {
+				display: flex;
+				flex-direction: column;
+
+				.img-container {
+					position: relative;
+					top: -70px;
+					transform: scale(1.3);
+				}
+			}
+		}
+
+		.header,
+		.body {
+			transform: scale(0.9);
+		}
+	}
+
+	// Subsribe
+	.sending-email {
+		text-align: center;
+	}
+
+	// Featured Products - Acoutic Guitar
+	.features-products {
+		height: 85em;
+		.header {
+			.tab-btn {
+				transform: scale(0.9);
+			}
+		}
+
+		.body {
+			.acoustic {
+				display: grid;
+				grid-auto-flow: row;
+			}
+			.kysen,
+			.django,
+			.lakewood {
+				display: none;
+			}
+		}
+	}
+
+	// Details
+	.details-container {
+		height: 35em;
+		.content {
+			transform: scale(0.9);
+			.counts {
+				.count:nth-child(1) {
+					grid-column: 1/2;
+					grid-row: 1/2;
+				}
+				.count:nth-child(2) {
+					grid-column: 2/3;
+					grid-row: 1/2;
+				}
+				.count:nth-child(3) {
+					grid-column: 1/2;
+					grid-row: 2/3;
+				}
+				.count:nth-child(4) {
+					grid-column: 2/3;
+					grid-row: 2/3;
+				}
+			}
+		}
+	}
+
+	// Featured Products - Electric Guitar
+	.features-electric-products {
+		height: 85em;
+		.header {
+			.tab-btn {
+				transform: scale(0.9);
+			}
+		}
+
+		.body {
+			.electric {
+				display: grid;
+				grid-auto-flow: row;
+			}
+			.brian-may,
+			.fender,
+			.ibanez {
+				display: none;
+			}
+		}
+	}
+
+	// Testiomonials
+	.testimonials-container {
+		.header {
+			position: relative;
+			top: 40px;
+
+			h1 {
+				font-size: var(--main-lg3-font);
+			}
+		}
+
+		.body {
+			transform: scale(0.7);
+
+			.carousel {
+				width: unset;
+				line-height: 30px;
+
+				.testimonial {
+					img {
+						position: relative;
+						top: -40px;
+					}
+				}
+			}
+		}
+	}
+	// Testiomonials
+	.testimonials-container {
+		.header {
+			position: relative;
+			top: -5px;
+
+			h1 {
+				font-size: var(--main-lg2-font);
+			}
+		}
+
+		.body {
+			transform: scale(0.7);
+
+			.carousel {
+				width: unset;
+				line-height: 30px;
+
+				.testimonial {
+					img {
+						position: relative;
+						top: -40px;
+					}
+				}
+			}
+		}
+	}
+
+	// Blogs
+	.blogs-container {
+		height: 100em;
+		text-align: center;
+
+		.header {
+			position: relative;
+			top: -15px;
+			h1 {
+				font-size: var(--main-lg2-font);
+			}
+		}
+
+		.body {
+			position: relative;
+			top: 100px;
+			transform: scale(1);
+			flex-direction: column;
+			grid-gap: 100px;
+
+			.concert {
+				position: relative;
+				top: -250px;
+			}
+			.concert {
+				.img-container {
+					img {
+						transform: scale(1.2);
+						&:hover {
+							margin-top: unset;
+							position: relative;
+							top: -5px;
+						}
+					}
+				}
+				.txt-container {
+					position: relative;
+					top: 50px;
+				}
+			}
+		}
+	}
+
+	// About container
+	.about-container {
+		height: 50em;
+		text-align: center;
+
+		.body {
+			padding: 10px;
+			align-items: center;
+			flex-direction: column-reverse;
+
+			.txt-container {
+				left: unset;
+				h1 {
+					font-size: var(--main-lg2-font);
+				}
+				p {
+					font-size: var(--font-md-size);
+					line-height: 25px;
+				}
+			}
+
+			.img-container {
+				img {
+					width: 250px;
+				}
+			}
+		}
+	}
+
+	// Contact Container
+	.contact-container {
+		height: 34em;
+		.form-container {
+			margin: 0 10px 0 10px;
+
+			h1 {
+				font-size: var(--main-lg2-font);
+				font-size: 2.7rem;
+			}
+			.form {
+				position: relative;
+				top: 30px;
+			}
+		}
+	}
+
+	// Footer
+	.footer {
+		height: 30em;
+		.content {
+			transform: scale(.9);
+			left: 15px;
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+			place-items: center;
+			align-items: center;
+			grid-gap: 50px;
+
+			.social-media,
+			.help {
+				position: relative;
+				top: -20px;
+			}
+		}
+	}
+}
+
+// Small
+@media screen and (max-width: 559px) {
+	/* Cart Container */
+	// Add to cart button
+	.add-to-cart {
+		width: 250px;
+	}
+
+	// Main
+	.main {
+		.default {
+			z-index: 3;
+			background: var(--main-white2-color);
+			box-shadow: none;
+
+			.logo-container {
+				margin-left: -80px;
+			}
+
+			.toggle-btn {
+				margin-right: -80px;
+				display: block;
+
+				i {
+					font-size: 1.7rem;
+
+					&:hover {
+						cursor: pointer;
+					}
+					&:active {
+						@include rotate-toggle-btn();
+					}
+				}
+			}
+
+			.search-container,
+			.menu-container {
+				display: none;
+			}
+		}
+		.responsive {
+			position: fixed;
+			top: -340px;
+			width: 100vw;
+			@include nav-bar-style();
+			height: 50vh;
+
+			flex-direction: column;
+
+			.logo-container {
+				position: relative;
+				display: none;
+			}
+
+			.search-container {
+				text-align: center;
+
+				input {
+					border-top-left-radius: 8px;
+					border-bottom-left-radius: 8px;
+					display: block;
+				}
+			}
+
+			.menu-container {
+				flex-direction: column;
+				text-align: center;
+
+				li {
+					padding: 20px;
+				}
+			}
+		}
+
+		// Hero
+		.hero {
+			margin-left: 8px;
+			.txt-container {
+				position: relative;
+				top: 200px;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+
+				h1 {
+					font-size: var(--main-lg2-font);
+				}
+
+				.shop-now-btn {
+				}
+			}
+
+			.img-container {
+				position: absolute;
+				transform: rotate(20deg) scale(0.7);
+				top: 40px;
+				right: -70px;
+				opacity: 0.3;
+			}
+		}
+	}
+
+	// Offer Container - > Second Section
+	.offer-container {
+		height: 63em;
+
+		//   Layout
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-rows: 300px auto;
+
+		.header {
+			text-align: center;
+			@include flexCenter();
+			justify-content: center;
+			flex-direction: column;
+
+			h1 {
+				font-size: var(--main-lg3-font);
+			}
+
+			p {
+				font-size: var(--main-lg4-font);
+			}
+		}
+
+		.body {
+			padding: 15px;
+			position: relative;
+			top: -54px;
+			.content {
+				flex-direction: column;
+
+				.img-container {
+					img {
+						width: 100%;
+					}
+				}
+
+				.txt-container {
+					position: relative;
+					top: 40px;
+					h2 {
+						font-size: var(--main-lg2-font);
+						font-weight: normal;
+					}
+					h5 {
+						font-size: var(--main-lg3-font);
+						font-weight: lighter;
+					}
+
+					.price {
+						display: flex;
+						align-items: center;
+
+						.close {
+							text-decoration: line-through;
+						}
+
+						.open {
+							font-weight: bold;
+							font-size: var(--main-md-font);
+						}
+					}
+
+					//   Horizontal
+					.horizontal {
+						position: relative;
+						top: 10px;
+						opacity: 0.2;
+						height: 0.5px;
+					}
+
+					.buttons {
+						position: relative;
+						top: 20px;
+						display: flex;
+					}
+				}
+			}
+		}
+	}
+
+	// Subsribe
+	.sending-email {
+		text-align: center;
+
+		.content {
+			h1 {
+				padding: 10px;
+			}
+			.send-email {
+				position: relative;
+				left: -20px;
+				transform: scale(0.9);
+				width: 270px;
+			}
+		}
+	}
+
+	// Featured Products - Acoutic Guitar
+	.features-products {
+		height: 85em;
+		.header {
+			position: relative;
+			top: 70px;
+			padding: 5px;
+			h1 {
+				font-size: var(--main-lg3-font);
+			}
+
+			p {
+				font-size: var(--main-sm-font);
+			}
+
+			.tab-btn {
+				z-index: 1;
+				transform: scale(0.9);
+				flex-direction: column;
+				width: 100%;
+				button {
+					display: block;
+					width: 100%;
+					border: none;
+					padding: 14px 28px;
+					font-size: 16px;
+					cursor: pointer;
+					text-align: center;
+				}
+			}
+		}
+
+		.body {
+			position: relative;
+			top: 20px;
+			width: 100%;
+			.acoustic {
+				display: grid;
+				grid-auto-flow: row;
+				transform: scale(0.8);
+			}
+			.kysen,
+			.django,
+			.lakewood {
+				display: none;
+			}
+		}
+	}
+
+	// Details
+	.details-container {
+		height: 45em;
+		.content {
+			transform: scale(0.8);
+			.counts {
+				position: relative;
+				top: 65px;
+				grid-gap: 60px;
+				.count:nth-child(1) {
+					grid-column: 1/2;
+					grid-row: 1/2;
+				}
+				.count:nth-child(2) {
+					grid-column: 1/2;
+					grid-row: 2/3;
+				}
+				.count:nth-child(3) {
+					grid-column: 1/2;
+					grid-row: 3/4;
+				}
+				.count:nth-child(4) {
+					grid-column: 1/2;
+					grid-row: 4/5;
+				}
+			}
+		}
+	}
+
+	// Featured Products - Acoutic Guitar
+	.features-electric-products {
+		height: 85em;
+		.header {
+			position: relative;
+			top: 70px;
+			h1 {
+				font-size: var(--main-lg3-font);
+			}
+
+			p {
+				font-size: var(--main-sm-font);
+			}
+
+			.tab-btn {
+				z-index: 1;
+				transform: scale(0.9);
+				flex-direction: column;
+				width: 100%;
+				button {
+					display: block;
+					width: 100%;
+					border: none;
+					padding: 14px 28px;
+					font-size: 16px;
+					cursor: pointer;
+					text-align: center;
+				}
+			}
+		}
+
+		.body {
+			position: relative;
+			top: 20px;
+			.electric {
+				display: grid;
+				grid-auto-flow: row;
+				transform: scale(0.8);
+			}
+
+			.brian-may,
+			.fender,
+			.ibanez {
+				display: none;
+			}
+		}
+	}
+
+	// Testiomonials
+	.testimonials-container {
+		.header {
+			position: relative;
+			top: 40px;
+
+			h1 {
+				font-size: var(--main-lg3-font);
+			}
+		}
+
+		.body {
+			transform: scale(0.7);
+
+			.carousel {
+				width: unset;
+				line-height: 30px;
+
+				.testimonial {
+					img {
+						position: relative;
+						top: -40px;
+					}
+				}
+			}
+		}
+	}
+
+	// Blogs
+	.blogs-container {
+		height: 80em;
+		text-align: center;
+
+		.header {
+			position: relative;
+			top: -15px;
+			h1 {
+				font-size: var(--main-lg3-font);
+				padding: 15px;
+			}
+		}
+
+		.body {
+			transform: scale(0.8);
+			flex-direction: column;
+			grid-gap: 100px;
+
+			.concert {
+				position: relative;
+				top: -250px;
+			}
+			.concert {
+				.img-container {
+					img {
+						width: 100%;
+						&:hover {
+							margin-top: unset;
+							position: relative;
+							top: -20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// About container
+	.about-container {
+		height: 50em;
+
+		.body {
+			padding: 10px;
+			align-items: center;
+			flex-direction: column-reverse;
+
+			.txt-container {
+				left: unset;
+				align-items: flex-start;
+				margin: 0 5px 0 5px;
+				h1 {
+					font-size: var(--main-lg3-font);
+				}
+				p {
+					font-size: var(--font-md-size);
+					line-height: 20px;
+				}
+			}
+
+			.img-container {
+				img {
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	// Contact Container
+	.contact-container {
+		height: 34em;
+		.form-container {
+			margin: 0 10px 0 10px;
+
+			h1 {
+				font-size: var(--main-lg2-font);
+				font-size: 2.7rem;
+			}
+			.form {
+				position: relative;
+				top: 30px;
+			}
+		}
+	}
+
+	// Footer
+	.footer {
+		height: 50em;
+		.content {
+			padding: 12px;
+			left: unset;
+			display: grid;
+			justify-content: center;
+			align-content: center;
+			grid-gap: 40px;
+		}
+	}
+}

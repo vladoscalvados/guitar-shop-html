@@ -1,0 +1,200 @@
+@mixin nav-bar-style {
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background: var(--main-white2-color);
+  transition: var(--main-transition);
+  @include flexCenter();
+
+  // Logo
+  .logo-container {
+    font-size: var(--font-size);
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  // Search
+  .search-container {
+    @include flexCenter();
+
+    input[type="text"] {
+      padding: 11px;
+      width: 250px;
+      border: 1px var(--main-gray-color) solid;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background: none;
+      position: relative;
+      top: 1px;
+    }
+
+    p {
+      font-size: var(--main-md-font);
+      background: var(--main-primary-color);
+      color: var(--main-white-color);
+      font-size: var(--main-sm-font);
+      padding: 12px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--main-hover-color);
+        transition: var(--main-transition);
+      }
+    }
+  }
+  // Navigation
+  .menu-container {
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    padding: 15px;
+    font-size: var(--font-size);
+  }
+
+  a {
+    &:hover {
+      color: var(--main-primary-color);
+      transition: var(--main-transition);
+    }
+  }
+}
+
+// Main
+.main {
+  height: 100vh;
+  background: var(--main-white2-color);
+  // Layout
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-rows: auto;
+
+  //   Navbar
+
+  .responsive {
+    display: none;
+  }
+  .nav-bar {
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    background: var(--main-white2-color);
+    transition: var(--main-transition);
+    @include flexCenter();
+
+    // Logo
+    .logo-container {
+      font-size: var(--font-size);
+    }
+
+    .toggle-btn {
+      display: none;
+    }
+
+    // Search
+    .search-container {
+      @include flexCenter();
+
+      input[type="text"] {
+        padding: 14px 28px;
+        width: 250px;
+        border: 1px var(--main-gray-color) solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: none;
+        position: relative;
+        top: 1px;
+      }
+
+      p {
+        font-size: var(--main-md-font);
+        background: var(--main-primary-color);
+        color: var(--main-white-color);
+        font-size: var(--main-sm-font);
+        padding: 14px 28px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--main-hover-color);
+          transition: var(--main-transition);
+        }
+      }
+    }
+    // Navigation
+    .menu-container {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      padding: 15px;
+      font-size: var(--font-size);
+    }
+
+    a {
+      &:hover {
+        color: var(--main-primary-color);
+        transition: var(--main-transition);
+      }
+    }
+  }
+
+  //   Hero
+  .hero {
+    @include flexCenter();
+    position: relative;
+    justify-content: center;
+    top: 65px;
+
+    // Text
+    .txt-container {
+      z-index: 1;
+      align-items: flex-start;
+
+      h1 {
+        font-size: var(--main-lg-font);
+      }
+
+      p {
+        font-size: var(--main-md-font);
+      }
+
+      a {
+        padding: 14px 28px;
+        border-radius: 8px;
+        width: 150px;
+        border: 2px var(--main-primary-color) solid;
+        background: var(--main-primary-color);
+        position: relative;
+        top: 30px;
+        font-size: var(--main-sm-font);
+        color: var(--main-white-color);
+
+        &:hover {
+          cursor: pointer;
+          border: 2px var(--main-dark-color) solid;
+          background: var(--main-dark-color);
+          transition: var(--main-transition);
+          color: var(--main-white-color);
+        }
+      }
+    }
+    // Img
+    .img-container {
+      img {
+        height: 600px;
+        position: relative;
+        top: 60px;
+      }
+    }
+  }
+}

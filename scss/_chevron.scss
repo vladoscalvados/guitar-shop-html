@@ -1,0 +1,54 @@
+// Chevron right
+.chevron-right {
+  visibility: hidden;
+  position: relative;
+  left: 50px;
+  top: -15px;
+  display: block;
+  height: 50px; /*height should be double border*/
+  cursor: pointer;
+  transform: rotate(270deg);
+}
+.chevron-right::before,
+.chevron-right::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border: 25px solid transparent; /*adjust size*/
+}
+/*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
+.chevron-right::before {
+  top: 0;
+  border-top-color: var(--main-primary-color); /*chevron-right Color*/
+}
+.chevron-right::after {
+  top: -10px; /*adjust thickness*/
+  border-top-color: var(--main-white2-color); /*Match background colour*/
+}
+
+// Chevron left
+.chevron-left {
+  position: relative;
+  top: -60px;
+  right: 45px;
+  display: block;
+  height: 50px; /*height should be double border*/
+  cursor: pointer;
+  transform: rotate(-270deg);
+}
+.chevron-left::before,
+.chevron-left::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border: 25px solid transparent; /*adjust size*/
+}
+/*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
+.chevron-left::before {
+  top: 0;
+  border-top-color: var(--main-primary-color); /*chevron-left Color*/
+}
+.chevron-left::after {
+  top: -10px; /*adjust thickness*/
+  border-top-color: var(--main-white2-color); /*Match background colour*/
+}

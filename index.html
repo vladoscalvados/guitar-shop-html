@@ -1,0 +1,788 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>constGuitar Shop!</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main" id="main">
+      <!-- Navbar -->
+      <div class="nav-bar default" id="nav-bar">
+        <div class="logo-container">
+          <a href="">GUITAR</a>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search Guitar..." />
+          <p>Search</p>
+        </div>
+        <ul class="menu-container">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about-container">About</a></li>
+          <li><a href="#contact-container">Contact</a></li>
+          <li id="my-cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i> My Cart</a>
+          </li>
+        </ul>
+        <div class="toggle-btn">
+          <i class="fa fa-bars" id="toggle-btn"></i>
+        </div>
+      </div>
+
+      <div class="responsive" id="responsive-nav-bar">
+        <div class="logo-container">
+          <a href="">GUITAR</a>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search Guitar..." />
+          <p>Search</p>
+        </div>
+        <ul class="menu-container">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about-container">About</a></li>
+          <li><a href="#contact-container">Contact</a></li>
+          <li id="my-cart-mobile">
+            <a href="#"><i class="fa fa-shopping-cart"></i> My Cart</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Add to cart button -->
+      <div class="add-to-cart" id="cart">
+        <div class="header">
+          <div class="close-btn">
+            <i id="close-btn" class="fa fa-arrow-right"></i>
+          </div>
+          <div class="heading">
+            <h1>My Cart!</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="items">
+          <ol class="items-list">
+            <li>Fender Guitar</li>
+            <li>Kysen Guitar</li>
+            <!-- <li>Lakewood Guitar <p>45,000</p><i>X</i></li>
+            <li>Django Guitar <p>25,000</p><i>X</i></li>
+            <li>Ibanez Guitar <p>24,000</p><i>X</i></li> -->
+          </ol>
+          <div class="item-btn">
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Home -->
+      <div class="body">
+        <div class="hero">
+          <div class="txt-container">
+            <h1>
+              Life is a song, <br />
+              Love is the music.&nbsp;
+            </h1>
+            <p>&nbsp;Go where the guitar takes you.</p>
+            &nbsp;<a
+              href="#shopping-start"
+              class="shop-now-btn"
+              id="shop-now-btn"
+            >
+              <i class="fa fa-shopping-cart"></i> Shop Now!</a
+            >
+            <br /><br />
+          </div>
+          <div class="img-container">
+            <img src="./assets/images/guitar2.jpeg" alt="guitar" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer Container -->
+    <div class="offer-container" id="shopping-start">
+      <div class="header">
+        <h1>Time-Limited Christmas Sale!</h1>
+        <p>Sale ends in 8h 6m 39s</p>
+      </div>
+      <div class="body">
+        <div class="content">
+          <div class="img-container">
+            <img src="./assets/images/guitar3.jpeg" alt="guitar" />
+          </div>
+          &nbsp; &nbsp; &nbsp;
+          <div class="txt-container">
+            <h2>80% OFF</h2>
+            <h5>Electric Guitar</h5>
+            &nbsp;
+            <div class="price">
+              <p class="close">25,000</p>
+              &nbsp;&nbsp;
+              <p class="open">₱15,999</p>
+            </div>
+            &nbsp;&nbsp;
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              magnam libero <br />
+              nesciunt explicabo, ipsum perferendis quasi! Et molestiae
+              voluptates qui libero <br />iusto reprehenderit officiis culpa
+              similique maiores. Eum, repellendus voluptatum.<br />
+              Fuga autem maxime, voluptatum alias nulla et doloremque eveniet
+              voluptatem!
+            </p>
+            <hr class="horizontal" />
+            <div class="buttons">
+              <p>♣ Add To Cart</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>♣ Add To Wishlist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sending email section  -->
+    <div class="sending-email">
+      <div class="content">
+        <h1>Subscribe to get our next discount offers</h1>
+        &nbsp;
+        <div class="send-email">
+          <input type="text" placeholder="Enter your email..." />
+
+          <p>Subscribe</p>  
+        </div>
+        &nbsp;
+        <p>We wil not spam or share your email</p>
+      </div>
+    </div>
+
+    <!-- Features Products -->
+    <!-- Acoutics -->
+    <div class="features-products">
+      <div class="header">
+        <h1>Featured Acoustic Guitar</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quo
+          commodi excepturi!
+        </p>
+        <!-- Buttons -->
+        <div class="tab-btn">
+          <button
+            class="a-guitar-tab-links active"
+            onclick="showAcoustic(event,'deviser')"
+          >
+            Deviser
+          </button>
+          <button
+            class="a-guitar-tab-links"
+            onclick="showAcoustic(event,'kysen')"
+          >
+            Kysen
+          </button>
+          <button
+            class="a-guitar-tab-links"
+            onclick="showAcoustic(event,'django')"
+          >
+            Django
+          </button>
+          <button
+            class="a-guitar-tab-links"
+            onclick="showAcoustic(event,'lakewood')"
+          >
+            Lakewood
+          </button>
+        </div>
+      </div>
+      <div class="body">
+        <!-- Deviser -->
+        <div class="deviser acoustic" id="deviser">
+          <!-- Product 1  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/deviser/01.png" alt="guitar" />
+              <a href="#">Deviser L570 Acoustic Guitar</a>
+            </div>
+
+            <div class="info">
+              <b>32,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/deviser/02.png" alt="guitar" />
+              <a href="#">Kaysen Acoustic Guitar</a>
+            </div>
+
+            <div class="info">
+              <b>28,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kysen -->
+        <div class="kysen acoustic" id="kysen">
+          <!-- Product 1  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/kysen/01.png" alt="guitar" />
+              <a href="#">Spruce Sapele Back Guitar</a>
+            </div>
+
+            <div class="info">
+              <b>38,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/kysen/02.png" alt="guitar" />
+              <a href="#">OEM brand acoustic guitar</a>
+            </div>
+
+            <div class="info">
+              <b>40,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="django acoustic" id="django">
+          <!-- Product 1  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/django/01.png" alt="guitar" />
+              <a href="#">D&D Django Jr 1</a>
+            </div>
+
+            <div class="info">
+              <b>35,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/django/02.png" alt="guitar" />
+              <a href="#">D&D Django Jr 2</a>
+            </div>
+
+            <div class="info">
+              <b>40,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lakewood -->
+        <div class="lakewood acoustic" id="lakewood">
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/lakewood/01.png" alt="guitar" />
+              <a href="#">Lakewood M-32 CP </a>
+            </div>
+
+            <div class="info">
+              <b>45,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/lakewood/02.png" alt="guitar" />
+              <a href="#">Lakewtood M-52 Premium</a>
+            </div>
+
+            <div class="info">
+              <b>50,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details -->
+    <div class="details-container">
+      <div class="content">
+        <h1>Guitar Bring out the best for you</h1>
+        <div class="counts">
+          <div class="count">
+            <h4>4,000</h4>
+            <p>Happy Costumer</p>
+          </div>
+          <div class="count">
+            <h4>700</h4>
+            <p>Branches</p>
+          </div>
+          <div class="count">
+            <h4>2,000</h4>
+            <p>Partners</p>
+          </div>
+          <div class="count">
+            <h4>180</h4>
+            <p>Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eletric -->
+    <div class="features-electric-products">
+      <div class="header">
+        <h1>Featured Electric Guitar</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quo
+          commodi excepturi!
+        </p>
+        <!-- Buttons -->
+        <div class="tab-btn">
+          <button
+            class="e-guitar-tab-links active"
+            onclick="showElectric(event,'jAndD')"
+          >
+            J&D
+          </button>
+          <button
+            class="e-guitar-tab-links"
+            onclick="showElectric(event,'brianMay')"
+          >
+            Brian may
+          </button>
+          <button
+            class="e-guitar-tab-links"
+            onclick="showElectric(event,'fender')"
+          >
+            Fender
+          </button>
+          <button
+            class="e-guitar-tab-links"
+            onclick="showElectric(event,'ibanez')"
+          >
+            Ibanez
+          </button>
+        </div>
+      </div>
+      <div class="body">
+
+        <!-- J and D  -->
+        <div class="j-and-d electric" id="jAndD">
+          <!-- Product 1  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/J AND D/01.png" alt="guitar" />
+              <a href="#">Maple Fingerboard & Neck</a>
+            </div>
+
+            <div class="info">
+              <b>35,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/J AND D/02.png" alt="guitar" />
+              <a href="#">J&D ST-MINI-SB </a>
+            </div>
+
+            <div class="info">
+              <b>40,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brian may -->
+        <div class="brian-may electric" id="brianMay">
+          <!-- Product 1  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/brian may/01.png" alt="guitar" />
+              <a href="#">Red Special Electric Guitar</a>
+            </div>
+
+            <div class="info">
+              <b>35,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+
+          <!-- Product 2  -->
+          <div class="product">
+            <div class="info">
+              <img src="./assets/images/brian may/02.png" alt="guitar" />
+              <a href="#">BMG Special - Antique</a>
+            </div>
+
+            <div class="info">
+              <b>40,000</b>
+              <img src="./assets/images/rate.png" alt="rate" />
+            </div>
+
+            <hr />
+
+            <div class="info">
+              <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+              <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fender -->
+          <div class="fender electric" id="fender">
+            <!-- Product 1  -->
+            <div class="product">
+              <div class="info">
+                <img src="./assets/images/fender/01.png" alt="guitar" />
+                <a href="#">Stratocaster HSS Amber RW</a>
+              </div>
+            
+              <div class="info">
+                <b>35,000</b>
+                <img src="./assets/images/rate.png" alt="rate" />
+              </div>
+            
+              <hr />
+            
+              <div class="info">
+                <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+                <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+            </div>
+            
+            <!-- Product 2  -->
+            <div class="product">
+              <div class="info">
+                <img src="./assets/images/fender/02.png" alt="guitar" />
+                <a href="#">Stratocaster RW Amber 2005</a>
+              </div>
+            
+              <div class="info">
+                <b>40,000</b>
+                <img src="./assets/images/rate.png" alt="rate" />
+              </div>
+            
+              <hr />
+            
+              <div class="info">
+                <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+                <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+            </div> 
+          </div>
+
+          <!-- Ibanez -->
+          <div class="ibanez electric" id="ibanez">
+            <!-- Product 1  -->
+            <div class="product">
+              <div class="info">
+                <img src="./assets/images/ibanez/01.png" alt="guitar" />
+                <a href="#">RG370AHMZ-BMT RG</a>
+              </div>
+
+              <div class="info">
+                <b>35,000</b>
+                <img src="./assets/images/rate.png" alt="rate" />
+              </div>
+
+              <hr />
+
+              <div class="info">
+                <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+                <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+            </div>
+
+            <!-- Product 2  -->
+            <div class="product">
+              <div class="info">
+                <img src="./assets/images/ibanez/02.png" alt="guitar" />
+                <a href="#">BMG Special Antique</a>
+              </div>
+
+              <div class="info">
+                <b>40,000</b>
+                <img src="./assets/images/rate.png" alt="rate" />
+              </div>
+
+              <hr />
+
+              <div class="info">
+                <a href="#"><i class="fa fa-heart"></i> Add to Wishlist</a>
+                <a href="#"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials-container">
+        <div class="header">
+          <h1 >Testimonials</h1>
+        </div>
+        <div class="body">
+          <div class="carousel">
+            <div class="chevron-left" onclick="leftChevron('carousel2')"></div>
+            <div class="testimonial carousel1" id="carousel1">
+              <img src="./assets/images/johndoe1.jpg" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, optio labore. Possimus placeat mollitia, vero
+                tenetur voluptatum quo consequuntur blanditiis quae tempora
+                omnis! Assumenda totam ipsum voluptatem tenetur, culpa odit!
+              </p>
+              <br /> 
+              <b> - John Doe</b>
+            </div>
+            <div class="testimonial carousel2" id="carousel2">
+              <img src="./assets/images/johndoe2.jpg" alt="" />
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters.
+              </p>
+              <br /> 
+              <b> - Jonathan Doe</b>
+            </div>
+            <div
+              class="chevron-right"
+              onclick="rightChevron('carousel1')"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blogs -->
+      <div class="blogs-container">
+        <div class="header">
+          <h1>Our Previous Concert</h1>
+        </div>
+        <div class="body">
+          <div class="concert">
+            <div class="img-container">
+              <img src="./assets/images/concert1.jpg" alt="concert img" />
+            </div>
+            <div class="txt-container">
+              <a>Concert One</a>
+              <br /><br />
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur .</p>
+            </div>
+          </div>
+
+          <div class="concert">
+            <div class="img-container">
+              <img src="./assets/images/concert2.jpg" alt="concert img" />
+            </div>
+            <div class="txt-container">
+              <a>Concert Two</a>
+              <br /><br />
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur .</p>
+            </div>
+          </div>
+
+          <div class="concert">
+            <div class="img-container">
+              <img src="./assets/images/concert3.jpg" alt="concert img" />
+            </div>
+            <div class="txt-container">
+              <a>Concert Three</a>
+              <br /><br />
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-container" id="about-container">
+        <div class="body">
+          <div class="txt-container">
+            <div class="header">
+              <h1>Guitar</h1>
+              <br />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
+                Temporibus accusamus veniam porro beatae placeat et <br />in
+                alias possimus exercitationem. Voluptatibus, consequuntur.
+                <br />Nobis necessitatibus nam beatae, commodi eveniet quia
+                deleniti fugit!
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
+                Temporibus accusamus veniam porro beatae placeat et <br />in
+                alias possimus exercitationem. Voluptatibus, consequuntur.
+                <br />Nobis necessitatibus nam beatae, commodi eveniet quia
+                deleniti fugit!
+              </p>
+              <br />
+            </div>
+          </div>
+          &nbsp;&nbsp; &nbsp;&nbsp;
+          <div class="img-container">
+            <img src="./assets/images/logo.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-container" id="contact-container">
+      <div class="form-container">
+        <h1>Get In Touch</h1>
+        <div class="form">
+          <input  type="text" placeholder="Full name" />
+          <input type="text" placeholder="Subject" />
+          <input type="text" placeholder="Email" />
+          <textarea name="" id="" placeholder="Message"></textarea>
+          <button>Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="content">
+        <div class="about">
+          <h1 class="title">Guitar</h1>
+          <p>
+            Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.<br />
+            voluptate illum! Nesciunt, illum!
+          </p>
+        </div>
+        <div class="social-media">
+          <h1 class="title">Follow Us On</h1>
+          <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a> <br />
+            <a href=""><i class="fa fa-instagram"></i></a> <br />
+            <a href=""><i class="fa fa-twitter"></i></a> <br />
+            <a href=""><i class="fa fa-youtube"></i></a> <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="subscribe">
+          <h1 class="title">Subscribe</h1>
+          <p>
+            Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.<br />
+            voluptate illum! Nesciunt, illum!
+          </p>
+          <div class="inputs">
+            <input type="text" placeholder="Email" />
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="help">
+          <h1 class="title">Help</h1>
+          <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Cancellation & Refunds</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

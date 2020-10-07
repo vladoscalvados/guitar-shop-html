@@ -1,0 +1,32 @@
+// About container
+.about-container {
+  background: var(--main-white2-color);
+  height: 35em;
+  display: grid;
+  place-items: center;
+
+  .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .txt-container {
+      position: relative;
+      left: -50px;
+      h1 {
+        font-size: var(--main-lg2-font);
+      }
+      p {
+        font-size: var(--font-size);
+        line-height: 25px;
+      }
+    }
+
+    .img-container {
+      img {
+        border-radius: 700px;
+        width: 400px;
+      }
+    }
+  }
+}

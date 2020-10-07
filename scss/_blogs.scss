@@ -1,0 +1,54 @@
+// Blogs
+.blogs-container {
+  height: 40em;
+  background: var(--main-white-color);
+
+  //   Layout
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 300px auto;
+  place-items: center;
+
+  .header {
+    text-align: center;
+
+    h1 {
+      font-size: var(--main-lg2-font);
+    }
+  }
+
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+
+    .concert {
+      position: relative;
+      top: -70px;
+    }
+    .concert {
+      .img-container {
+        img {
+          width: 350px;
+          &:hover {
+            margin-top: -20px;
+            cursor: pointer;
+          }
+        }
+      }
+      .txt-container {
+        text-align: center;
+
+        a {
+          font-size: var(--main-lg3-font);
+
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
